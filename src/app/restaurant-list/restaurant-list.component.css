@@ -1,0 +1,254 @@
+.sec-2-img button {
+    width: 110px !important;
+    border-radius: 50px;
+    border: 2px solid #efd4d4;
+}
+
+.break {
+    height: 20px;
+    background-color: red;
+}
+
+.sec-2-img.p-2 :hover {
+    border: 2px solid grey;
+}
+
+.fitIcon {
+    border: 2px solid grey;
+    width: 10px;
+    height: 10px;
+    border-radius: 100px;
+}
+
+.text-center .mt-3 {
+    height: 20px;
+}
+
+/* new css */
+
+.choose {
+    padding: 16px 0px;
+}
+
+.choose-heading-1 {
+
+    color: rgb(148, 147, 147);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 0;
+}
+
+.choose-heading-1 span {
+    width: 70px;
+    height: 2px;
+    background-color: rgb(148, 147, 147);
+
+}
+
+.choose-heading-1 p {
+    margin: 0px 10px;
+
+}
+
+.choose-heading-2 {
+    text-align: center;
+
+}
+
+.choose-heading-2 h2 {
+    font-size: 29px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: tomato;
+}
+
+.choose-menu-inner {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-1 {
+    margin-top: 12px;
+}
+
+.menu {
+    width: 24%;
+    box-sizing: border-box;
+    padding: 38px 10px;
+    border-bottom: 1px ridge transparent;
+    border-top: 3px ridge transparent;
+    border-right: 2px ridge transparent;
+    border-left: 5px ridge transparent;
+}
+
+.menu:hover {
+    border-right: 2px ridge rgb(255 251 251);
+    border-top: 3px ridge rgb(255 251 251);
+    border-left: 5px ridge rgb(255 251 251);
+    border-bottom: 1px ridge transparent;
+}
+
+.menu-heading {
+    text-align: center;
+}
+
+.menu-heading p {
+    width: 20%;
+    margin: auto;
+    color: white;
+    background-color: tomato;
+    border-radius: 12px;
+    border: 2px ridge #f1ecec;
+}
+
+.menu-img {
+    border: 3px groove rgb(255 251 251);
+    margin: 7px 0px 12px;
+}
+
+.menu-text {
+    text-align: center;
+}
+
+.menu-text h3 {
+    font-weight: 400;
+    font-size: 24px;
+    margin-bottom: 4px;
+}
+
+.menu-text p {
+    margin-bottom: 4px;
+    color: #9f9e9e;
+    font-size: 15px;
+}
+
+.menu-text button {
+    border: 2px solid rgb(148, 147, 147);
+    border-radius: 26px;
+    padding: 5px 10px;
+    background-color: tomato;
+
+}
+
+.menu-text button:hover {
+    background-color: #ef1b1b;
+
+}
+
+.menu-text button a {
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+
+/* ICON SECTION STARTS HERE  */
+
+.icons-inner {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon {
+    width: 24%;
+    text-align: center;
+}
+
+.icon-img {
+    font-size: 60px;
+}
+
+.icon-text p {
+    font-weight: 200;
+    font-size: 15px;
+}
+
+.icon-text h3 {
+    font-weight: 300;
+    font-size: 24px;
+}
+
+
+/* FOOTER STARTS HERE  */
+
+footer {
+    padding-top: 48px;
+}
+
+.footer-inner {
+    border-top: 8px solid tomato;
+    background-color: #1a1919;
+}
+
+.footer-main {
+    width: 45%;
+    margin: auto;
+
+
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin: auto;
+    padding: 10px 0px;
+}
+
+.footer-icon i {
+    background: whitesmoke;
+    font-size: 19px;
+    border-radius: 100%;
+    padding: 10px;
+    border: 2px solid #e5e0e0;
+}
+
+.footer-logo {
+    text-align: center;
+    color: #e5e0e0;
+}
+
+.footer-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #e5e0e0;
+}
+
+.footer-tele {
+    border-right: 1px solid red;
+    border-left: 1px solid red;
+    padding: 0px 28px;
+}
+
+.footer-copi {
+    background-color: #5a5757;
+    padding: 10px 4px;
+   
+}
+
+.choose-menu-inner{
+    width: 1000px;
+}
+
+.menuButton{
+    font-size: 10px;
+}
+
+.inputType{
+    width: 750px;
+    height: 50px;
+    border: 2px solid red;
+    border-radius: 10px;
+}
+
+.footer-copi p {
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 300;
+}

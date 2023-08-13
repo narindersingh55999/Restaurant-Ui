@@ -1,0 +1,62 @@
+ul.navbar-nav{
+    margin-left: 325px;
+}
+.fontSize{
+    font-size: 14px;
+}
+
+.pointer{
+    cursor: pointer;
+}
+.pointer :hover{
+    opacity: 20px;
+}
+.food{
+    height: 60px;
+    width: 115px;
+
+}
+ul, li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Style the custom dropdown container */
+  .custom-dropdown {
+    position: relative;
+    width: 150px; /* Adjust the width as needed */
+    background-color: #f8f9fa;
+  }
+  
+  /* Style the selected option */
+  .selected-option {
+    padding-left: 10px;
+    cursor: pointer;
+  }
+  
+  /* Style the dropdown list */
+  .dropdown-list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #f8f9fa;
+    display: none; /* Hide the list by default */
+  }
+  
+  /* Show the dropdown list when the selected option is clicked */
+  .custom-dropdown:hover .dropdown-list {
+    display: block;
+  }
+  
+  /* Style individual list items */
+  .dropdown-list li {
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .dropdown-list li :hover {
+    background-color: white;
+  }

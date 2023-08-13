@@ -1,0 +1,126 @@
+<div class="col-md-12">
+  <div class="card card-container ">
+    <h3 class="text-center">Create An Account</h3>
+    <hr>
+    <form
+      *ngIf="!isSuccessful"
+      name="form"
+      (ngSubmit)="f.form.valid && onSubmit()"
+      #f="ngForm"
+      novalidate
+      class="p-3"
+    >
+   
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="inputEmail4">First Name<span class="text-danger">*</span></label>
+          <input type="text" class="form-control" id="inputEmail4" placeholder="First Name">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="inputEmail4">Last Name<span class="text-danger">*</span></label>
+          <input type="text" class="form-control" id="inputEmail4" placeholder="Last Name">
+        </div>
+      </div>
+
+      <div class="form-row">
+      
+        <div class="form-group col-md-6">
+          <label for="email">Email<span class="text-danger">*</span></label>
+          <input
+            type="email"
+            class="form-control"
+            name="email"
+            [(ngModel)]="form.email"
+            required
+            email
+            #email="ngModel"
+            [ngClass]="{ 'is-invalid': f.submitted && email.errors }"
+            placeholder="Email"
+          />
+          <div class="invalid-feedback" *ngIf="email.errors && f.submitted">
+            <div *ngIf="email.errors['required']">Email is required</div>
+            <div *ngIf="email.errors['email']">
+              Email must be a valid email address
+            </div>
+          </div>
+        </div>
+        <div class="form-group col-md-6">
+          <label for="inputEmail4">Phone(Optional)</label>
+          <input type="text" class="form-control" id="inputEmail4" placeholder="+919753576459">
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="inputEmail4">Date of birth</label>
+          <input type="date" class="form-control" id="inputEmail4" placeholder="Date">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="password">Password<span class="text-danger">*</span></label>
+          <input
+            type="password"
+            class="form-control"
+            name="password"
+            [(ngModel)]="form.password"
+            required
+            minlength="6"
+            #password="ngModel"
+            [ngClass]="{ 'is-invalid': f.submitted && password.errors }"
+          />
+          <div class="invalid-feedback" *ngIf="password.errors && f.submitted">
+            <div *ngIf="password.errors['required']">Password is required</div>
+            <div *ngIf="password.errors['minlength']">
+              Password must be at least 6 characters
+            </div>
+          </div>
+        </div>
+      </div>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+      <label for="inputEmail4">Confirmation Password<span class="text-danger">*</span></label>
+      <input type="password" class="form-control" id="inputEmail4" placeholder="Email">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="username">User Name<span class="text-danger">*</span></label>
+      <input
+        type="text"
+        class="form-control"
+        name="username"
+        [(ngModel)]="form.username"
+        required
+        minlength="3"
+        maxlength="20"
+        #username="ngModel"
+        [ngClass]="{ 'is-invalid': f.submitted && username.errors }"
+      />
+      <div class="invalid-feedback" *ngIf="username.errors && f.submitted">
+        <div *ngIf="username.errors['required']">Username is required</div>
+        <div *ngIf="username.errors['minlength']">
+          Username must be at least 3 characters
+        </div>
+        <div *ngIf="username.errors['maxlength']">
+          Username must be at most 20 characters
+        </div>
+      </div>
+    </div>
+  </div>
+     
+     
+      
+      <div class="form-group">
+        <button class="btn loginButton btn-block text-danger">Submit</button>
+      </div>
+      <div class="form-group text-center">
+<a href="">Already have an account?</a>  
+    </div>
+
+      <div class="alert alert-warning" *ngIf="f.submitted && isSignUpFailed">
+        Signup failed!<br />{{ errorMessage }}
+      </div>
+    </form>
+
+    <div class="alert alert-success" *ngIf="isSuccessful">
+      Your registration is successful!
+    </div>
+  </div>
+</div>
